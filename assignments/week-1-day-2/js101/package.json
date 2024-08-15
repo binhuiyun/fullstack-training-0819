@@ -1,0 +1,21 @@
+{
+  "name": "js-101",
+  "version": "1.0.0",
+  "description": "This folder contains assignments related to JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "findLargestElement": "npx jest ./tests/findLargestElement.test.js",
+    "anagram": "npx jest ./tests/anagram.test.js",
+    "calculator": "npx jest ./tests/calculator.test.js",
+    "countVowels": "npx jest ./tests/countVowels.test.js",
+    "panlindrome": "npx jest ./tests/panlindrome.test.js",
+    "todo-list": "npx jest ./tests/todo-list.test.js",
+    "all": "npx jest ./tests/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
