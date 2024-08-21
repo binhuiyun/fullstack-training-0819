@@ -10,7 +10,7 @@ Feel free to start doing these in any order you like.
 3. Hard
 
 ## Testing
-1. Your working directory must be /assignments/week-1-day-3/js101 
+1. Your working directory must be /assignments/week-1-day-2/js101 
 2. Do npm install
 3. To run tests run `npx jest ./tests/<filename-of-test>` 
    for example, `npx jest ./tests/anagram.test.js`
