@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  max-width: 1200px;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+}
+
+.red-grid {
+  background-color: red;
+  margin: 0 0.5rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+.red-grid h3 {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blue-grid {
+  margin: 0 0.5rem;
+  display: grid;
+  font-size: x-large;
+  font-weight: bold;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: blue;
+}
+
+.blue-grid .col {
+  padding: 1rem 0;
+}

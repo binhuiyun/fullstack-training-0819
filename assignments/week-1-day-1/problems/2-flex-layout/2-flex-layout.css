@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.red-flex,
+.blue-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+.red-flex {
+  background-color: red;
+  flex: 1;
+}
+
+.blue-flex {
+  background-color: blue;
+  flex: 2;
+}
