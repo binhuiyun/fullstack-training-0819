@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Bar Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 50vh;
+        }
+
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .bottom-bar h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .bottom-bar p {
+            line-height: 1.6;
+            color: #dcdcdc;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            align-items: start;
+            max-width: 50%;
+        }
+
+        .icon-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .icon-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .icon-item span {
+            color: inherit;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="bottom-bar">
+        <div>
+            <h1>Code in any language</h1>
+            <p>VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
+        </div>
+        <div class="icon-grid">
+            <div class="icon-item" style="color: #f0db4f;">
+                <img src="1.png" alt="JS Icon">
+                <span>JavaScript</span>
+            </div>
+            <div class="icon-item" style="color: #3178c6;">
+                <img src="2.png" alt="TS Icon">
+                <span>TypeScript</span>
+            </div>
+            <div class="icon-item" style="color: #306998;">
+                <img src="3.png" alt="Python Icon">
+                <span>Python</span>
+            </div>
+            <div class="icon-item" style="color: #178600;">
+                <img src="4.png" alt="C# Icon">
+                <span>C#</span>
+            </div>
+            <div class="icon-item" style="color: #b07219;">
+                <img src="5.png" alt="Java Icon">
+                <span>Java</span>
+            </div>
+            <div class="icon-item" style="color: #083fa1;">
+                <img src="6.png" alt="Markdown Icon">
+                <span>Markdown</span>
+            </div>
+            <div class="icon-item" style="color: #f34b7d;">
+                <img src="7.png" alt="C++ Icon">
+                <span>C++</span>
+            </div>
+            <div class="icon-item" style="color: #cbcb41;">
+                <img src="8.png" alt="JSON Icon">
+                <span>JSON</span>
+            </div>
+            <div class="icon-item" style="color: #012456;">
+                <img src="9.png" alt="Powershell Icon">
+                <span>Powershell</span>
+            </div>
+            <div class="icon-item" style="color: #e34c26;">
+                <img src="10.png" alt="HTML Icon">
+                <span>HTML</span>
+            </div>
+            <div class="icon-item" style="color: #787cb5;">
+                <img src="11.png" alt="PHP Icon">
+                <span>PHP</span>
+            </div>
+            <div class="icon-item" style="color: #c00;">
+                <img src="12.png" alt="YAML Icon">
+                <span>YAML</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

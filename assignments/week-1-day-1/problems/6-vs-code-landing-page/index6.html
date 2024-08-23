@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .navbar, .hero, .bottom-bar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066b8;
+        }
+
+        .navbar .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #0066b8;
+        }
+
+        .navbar .download-button {
+            background-color: #0066b8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .navbar .download-button:hover {
+            background-color: #005299;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        .hero .text-section {
+            max-width: 50%;
+        }
+
+        .hero .text-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero .text-section p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .download-button {
+            background-color: #0066b8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .hero .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .bottom-bar {
+            background-color: #252526;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .bottom-bar .bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bottom-bar .text-section {
+            max-width: 50%;
+            text-align: left;
+        }
+
+        .bottom-bar .icons-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 50%;
+        }
+
+        .icon-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .icon-item span {
+            margin-left: 10px;
+        }
+
+        .icon-item.js { color: #f0db4f; }
+        .icon-item.ts { color: #3178c6; }
+        .icon-item.python { color: #306998; }
+        .icon-item.csharp { color: #178600; }
+        .icon-item.java { color: #b07219; }
+        .icon-item.markdown { color: #083fa1; }
+        .icon-item.cpp { color: #f34b7d; }
+        .icon-item.json { color: #cbcb41; }
+        .icon-item.powershell { color: #012456; }
+        .icon-item.html { color: #e34c26; }
+        .icon-item.php { color: #787cb5; }
+        .icon-item.yaml { color: #c00; }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero .text-section, .hero .image-section {
+                max-width: 100%;
+            }
+
+            .bottom-bar .bottom-content {
+                flex-direction: column;
+            }
+
+            .bottom-bar .text-section, .bottom-bar .icons-section {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="1.png" alt="VS Code Logo">
+            Visual Studio Code
+        </div>
+        <div class="nav-links">
+            <a href="#">Docs</a>
+            <a href="#">Updates</a>
+            <a href="#">Blog</a>
+            <a href="#">API</a>
+            <a href="#">Extensions</a>
+            <a href="#">FAQ</a>
+        </div>
+        <a href="#" class="download-button">Download</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="text-section">
+            <h1>Code Editing. Redefined.</h1>
+            <p>Free. Built on open source. Runs everywhere.</p>
+            <a href="#" class="download-button">Download for Windows</a>
+            <p><a href="#" style="color: #0066b8;">Web, Insiders edition, or other platforms</a></p>
+        </div>
+        <div class="image-section">
+            <img src="2.png" alt="VS Code Example">
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+        <div class="bottom-content">
+            <div class="text-section">
+                <h1>Code in any language</h1>
+                <p>VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
+            </div>
+            <div class="icons-section">
+                <div class="icon-item js"><span>JS</span> <span>JavaScript</span></div>
+                <div class="icon-item ts"><span>TS</span> <span>TypeScript</span></div>
+                <div class="icon-item python"><span>Python</span></div>
+                <div class="icon-item csharp"><span>C#</span></div>
+                <div class="icon-item java"><span>Java</span></div>
+                <div class="icon-item markdown"><span>Markdown</span></div>
+                <div class="icon-item cpp"><span>C++</span></div>
+                <div class="icon-item json"><span>JSON</span></div>
+                <div class="icon-item powershell"><span>Powershell</span></div>
+                <div class="icon-item html"><span>HTML</span></div>
+                <div class="icon-item php"><span>PHP</span></div>
+                <div class="icon-item yaml"><span>YAML</span></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

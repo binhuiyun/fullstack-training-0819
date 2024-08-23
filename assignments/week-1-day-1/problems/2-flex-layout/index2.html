@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name = "viewport"content="width=device-width, initial-scale=1.0">
+<title> Flex Layout </title>
+</head>
+<style>
+
+body {margin:0; padding:0; display: flex;
+        justify-content: center;align-items: flex-start;}
+    .containers{
+        display:flex;width:80%;
+        max-width: 1200px;height:100px;
+        margin:10px;padding:10px;
+        box-sizing: border-box;
+    }.left-div, .right-div{
+        padding:10px;
+        display: flex;justify-content: center;align-items:center;font-weight:bold;color:white;
+    }.right-div{
+        background-color: blue;flex:2;
+    }.left-div{
+        background-color: red;flex:1;
+    }
+</style>
+</head>
+<body>
+<div class = "containers">
+    <div class = "left-div">Left</div>
+    <div class = "right-div">Right</div>
+</body>
+</div>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name = "viewport"content="width=device-width, initial-scale=1.0">
+<title> Grid Layout </title>
+</head>
+<style>
+    body{
+        margin:0;background-color: white;display:flex;
+        justify-content: center;align-items: flex-start;height:100vh;
+    }.container{
+        display: grid;
+        grid-template-columns: 30%70%;width:60%;padding-top: 10px;gap:10px;
+    }.left{
+        background-color: red;padding: 10px;display: flex;justify-content: center;
+        align-items: center;color:white;
+    }.right{
+        background-color: blue;padding:10px;display: flex;justify-content: center;
+        align-items: center;color:white;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+    </div>
+</body>
+</html>

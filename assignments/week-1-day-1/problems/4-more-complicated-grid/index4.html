@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name = "viewport"content="width=device-width, initial-scale=1.0">
+<title> complex Grid Layout </title>
+</head>
+<style>
+    body{
+        margin:0;background-color:white;display: flex;justify-content: center;
+        align-items: flex-start;height:100vh;
+    }.container{
+        display: grid;grid-template-columns: 1fr 2fr;width:80%;gap:10px;
+        padding-top:10px;background-color:white;
+    }.left{
+        background-color: red;display: flex;justify-content: center;
+        align-items: center;padding: 20px;color: black;font-size: 20px;
+        text-align:center;
+    }.right{
+        background-color: blue;display: grid;grid-template-columns: repeat(3,1fr);
+        gap:10px;padding:20px;color:black;font-size:20px;
+    }.right div{
+        display: flex;justify-content: center;align-items: center;
+        background-color: rgba(255,255,255,0.2);
+    }
+    </style>
+    </head>
+    <body>
+        <div class ="container">
+            <div class ="left">
+                Lefttext text text text text text text text text<br>text
+                text text text text text text text 
+            </div>
+            <div class ="right">
+                <div>Col 1</div>
+                <div>COl 2</div>
+                <div>Col 3</div>
+                <div>Col 1</div>
+                <div>Col 2</div>
+                <div>Col 3</div>
+                <div>Col 1</div>
+                <div>Col 2</div>
+                <div>Col 3</div>
+            </div>
+        </div>
+    </body>
+    </html>
