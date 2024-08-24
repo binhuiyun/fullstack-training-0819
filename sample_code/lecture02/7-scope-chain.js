@@ -18,7 +18,7 @@ function first() {
 
 function third() {
   const d = 'Hey!';
-  console.log(d + c + b + a);
+  console.log(d + b + a);
 }
 
 // -----------------------------------------

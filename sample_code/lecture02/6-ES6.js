@@ -2,10 +2,10 @@
 // Array Destructuring
 
 // // ES6
-// const [num1, num2, num3] = arr1;
-// console.log(num1, num2, num3);
-// // num1, num2, num3 are still consts
-// // num1 = 2;
+const [num1, num2, num3] = arr1;
+console.log(num1, num2, num3);
+// num1, num2, num3 are still consts
+// num1 = 2;
 
 // -------------------------------------------
 // Use destructuring to swap elements
@@ -14,7 +14,7 @@
 // let second = 1;
 
 // Only because first/second are declared with let
-// [second, first] = [first, second];
+[second, first] = [first, second];
 
 // console.log(`first=${first}
 // second=${second}`);
@@ -48,9 +48,9 @@
 // Spread operator
 
 // Add elements
-// const arr3 = ['a', 'b', 'c'];
-// const arr4 = [0, ...arr3, 10];
-// console.log("arr4 =", arr4);
+const arr3 = ['a', 'b', 'c'];
+const arr4 = [0, ...arr3, 10];
+console.log("arr4 =", arr4);
 
 // Shallow copy
 // const arr3Copy = [...arr3];

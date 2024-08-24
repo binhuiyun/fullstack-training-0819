@@ -34,14 +34,14 @@
 // ------------------------------------------------------------------------------------
 // Can be re-assigned: only var/let, not const
 
-// var var1;
-// var1 = 1;
+var var1;
+var1 = 1;
 
-// let var2;
-// var2 = 2;
+let var2;
+var2 = 2;
 
-// const var3 = 3;
-// var3 = 4;
+const var3 = 3;
+var3 = 4;
 
 // ------------------------------------------------------------------------------------
 // Mutation: cannot reassign const, but mutate properties if it's an object

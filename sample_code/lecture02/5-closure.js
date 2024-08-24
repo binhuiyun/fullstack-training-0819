@@ -1,13 +1,13 @@
 // EX: Implement a function that can be called multiple times to increment a variable, log the output.
 
-// let counter = 0;
-// function add() {
-//   counter++;
-//   return counter;
-// }
-// console.log(add());
-// console.log(add());
-// console.log(add());
+let counter = 0;
+function add() {
+  counter++;
+  return counter;
+}
+console.log(add());
+console.log(add());
+console.log(add());
 
 
 // // // ISSUE! Counter is accessible anywhere.
@@ -15,13 +15,13 @@
 // console.log(counter);
 
 // ---------------------------------------------
-// function counter() {
-//   let counter = 0;
-//   return function () {
-//     counter++;
-//     return counter;
-//   };
-// }
+function counter() {
+  let counter = 0;
+  return function () {
+    counter++;
+    return counter;
+  };
+}
 
 // const add = counter();
 // console.log(add());

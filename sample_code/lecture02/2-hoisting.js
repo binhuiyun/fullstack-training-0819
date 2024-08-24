@@ -2,9 +2,10 @@
 // Hoisting Variables
 
 // Var declaration is hoisted and initialized with undefined.
-// console.log("num =", num);
-// var num = 6; // Declaration
-// num = 6; // Initialization
+console.log("num =", num);
+var num = 6; // Declaration
+num = 6; // Initialization
+
 
 // This is more or less the same thing.
 // var address;
