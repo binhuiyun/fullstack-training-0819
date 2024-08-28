@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title></title>
- 
+
 </head>
 
 <body>
@@ -13,11 +13,10 @@
   <div id="todos">
     <div id="todo-1">
       <h4>1. Take class</h4>
-    
     </div>
+
     <div id="todo-2">
       <h4>2. Go out to eat</h4>
-
     </div>
   </div>
   <div>
@@ -28,8 +27,15 @@
 
 <script>
   function addTodo() {
-    
+    let inputVal = document.getElementById("inp").value;
 
+    if (inputVal.trim() !== "") {
+      let newDiv = document.createElement("div");
+      let newTodoID = document.querySelectorAll("#todos > div").length + 1;
+      newDiv.innerHTML = `<h4>${newTodoID}. ${inputVal}</h4>`;
+      document.getElementById("todos").appendChild(newDiv);
+      inputVal = "";
+    }
   }
 </script>
 
